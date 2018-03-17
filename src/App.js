@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Welcome from './components/welcome'
-import Comment from './components/comment/comment'
+import Clock from './components/clock/clock'
 
 class App extends Component {
   render() {
@@ -16,7 +16,7 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <Welcome name={'August-Z'}/>
-        <Comment />
+        <Clock/>
       </div>
     );
   }
