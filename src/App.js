@@ -5,6 +5,7 @@ import Welcome from './components/welcome'
 import Clock from './components/clock/clock'
 import Toggle from './components/toggle/toggle'
 import ToggleX from './components/toggle/toggle-x'
+import ToggleEvent from './components/toggle/toggle-event'
 
 class App extends Component {
   render() {
@@ -21,6 +22,7 @@ class App extends Component {
         <Clock/>
         <Toggle bgColor={ 'pink' }/>
         <ToggleX bgColor={ 'gray' }/>
+        <ToggleEvent name={ 'Hello World!' }/>
       </div>
     );
   }
