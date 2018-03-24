@@ -1,10 +1,6 @@
 import React from 'react'
 
 export default class ToggleEvent extends React.Component {
-  constructor(props) {
-    super(props)
-  }
-
   preventPop(name, e) {
     e.preventDefault()
     alert(name)
