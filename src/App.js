@@ -7,9 +7,10 @@ import Toggle from './components/toggle/toggle'
 import ToggleX from './components/toggle/toggle-x'
 import ToggleEvent from './components/toggle/toggle-event'
 import LoginControl from './components/greet/login-control'
+import WarnPage from './components/warn/warn-page'
 
 class App extends Component {
-  render() {
+  render () {
     return (
       <div className="App">
         <header className="App-header">
@@ -25,6 +26,7 @@ class App extends Component {
         <ToggleX bgColor={ 'gray' }/>
         <ToggleEvent name={ 'Hello World!' }/>
         <LoginControl/>
+        <WarnPage/>
       </div>
     );
   }
