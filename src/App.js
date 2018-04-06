@@ -15,18 +15,18 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={ logo } className="App-logo" alt="logo"/>
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">Welcome to August Website</h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-        <Welcome name={ 'August-Z' }/>
+        {/*<p className="App-intro">*/}
+          {/*To get started, edit <code>src/App.js</code> and save to reload.*/}
+        {/*</p>*/}
+        {/*<Welcome name={ 'August-Z' }/>*/}
         <Clock/>
-        <Toggle bgColor={ 'pink' }/>
-        <ToggleX bgColor={ 'gray' }/>
-        <ToggleEvent name={ 'Hello World!' }/>
-        <LoginControl/>
-        <WarnPage/>
+        {/*<Toggle bgColor={ 'pink' }/>*/}
+        {/*<ToggleX bgColor={ 'gray' }/>*/}
+        {/*<ToggleEvent name={ 'Hello World!' }/>*/}
+        {/*<LoginControl/>*/}
+        {/*<WarnPage/>*/}
       </div>
     );
   }

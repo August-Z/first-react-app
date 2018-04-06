@@ -21,19 +21,25 @@ import React from 'react'
  * 就会被清除。
  */
 export default class Clock extends React.Component {
-  constructor(props) {
+
+  style = {
+    padding: '0 20px',
+    letterSpacing: '1px'
+  }
+
+  constructor (props) {
     super(props)
     // 构造函数是唯一能够初始化 this.state 的地方
     this.state = { date: new Date() }
   }
 
-  tick() {
+  tick () {
     // 直接进行 this.state.date = new Date() 是无效的
     this.setState({ date: new Date() })
   }
 
   // 挂载：组件第一次加载到 dom 中
-  componentDidMount() {
+  componentDidMount () {
     /**
      * 虽然 this.props 由 React 本身设置以及 this.state 具有特殊的含义，
      * 但如果需要存储不用于视觉输出的数据，则可以手动向类中添加其他字段。
@@ -46,15 +52,15 @@ export default class Clock extends React.Component {
   }
 
   // 卸载：生成的 dom 被移除的时候
-  componentWillUnmount() {
+  componentWillUnmount () {
     clearInterval(this.timerID)
   }
 
-  render() {
+  render () {
     return (
-      <div>
-        <h1>Hello, world!</h1>
-        <h2>It's {this.state.date.toLocaleTimeString()}</h2>
+      <div style={ this.style }>
+        <h2>It's { this.state.date.toLocaleTimeString() }</h2>
+        <h4>I'm learning react and trying to write this new site with it.</h4>
       </div>
     )
   }
